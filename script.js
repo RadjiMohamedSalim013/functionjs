@@ -105,3 +105,17 @@ function fibonacci(n) {
   }
 // Exemple 
 console.log(fibonacci(25))
+
+
+
+//Vérification des nombres premiers : créez une fonction pour vérifier si un nombre est premier ou non.
+function estPremier(n) {
+    if (n < 2) return false; 
+    for (let i = 2; i <= Math.sqrt(n); i++) {
+        if (n % i === 0) return false; 
+    }
+    return true; 
+}
+//Exemple
+console.log(estPremier(10)); 
+console.log(estPremier(17)); 
